@@ -1,0 +1,201 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #d6eaf8 ;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Layout and Container Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Main Content Styling */
+main {
+    flex: 2;
+    padding-right: 20px;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Sidebar Styling */
+aside {
+    flex: 1;
+    background-color:#ebf5fb;
+    padding: 20px;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+
+}
+aside h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Contact Section Background Image Styling */
+#contact {
+    background-image: url('https://cdn.shopify.com/s/files/1/0670/1291/9598/files/Andhra_Sweets_530db807-5acd-4a79-8e89-d849ac913025_1024x1024.jpg?v=1675598538'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 40px 20px; /* Add some padding for content spacing */
+    color: white; /* Ensure text is readable against the background */
+}
+
+#contact .container {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay to improve text readability */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+/* About Section Background Image Styling */
+#about {
+    background-image: url('https://imgmedia.lbb.in/media/2019/10/5da56d5be96484b6185e43b4_1571122523906.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 40px 20px; /* Add some padding for content spacing */
+    color: white; /* Ensure text is readable against the background */
+}
+
+#about .container {
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Add a semi-transparent overlay to improve text readability */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #d6eaf8  ;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        padding-right: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
